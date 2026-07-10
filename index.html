@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klinik Bersama Kelompok 2 - Front End Publik</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Pengaturan logo di navbar pojok kiri atas */
+        .navbar-logo {
+            height: 40px;
+            width: auto;
+            border-radius: 6px;
+            background-color: white; /* Memberi latar putih tipis agar logo terlihat jelas */
+            padding: 2px;
+        }
+
+        /* Pengaturan logo besar di samping judul KLINIK BERSAMA */
+        .hero-brand-logo {
+            height: 75px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Pengaturan khusus agar tata letak gambar lencana pas dengan teks deskripsi di bawahnya */
+        .poli-badge-wrapper {
+            text-align: left;
+        }
+        .poli-img-badge {
+            max-width: 100%;
+            height: auto;
+            max-height: 55px;
+            object-fit: contain;
+            margin-bottom: 12px;
+        }
+        .poli-desc {
+            font-size: 0.9rem;
+            color: #495057;
+            line-height: 1.5;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body class="home-body">
+
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+                <img src="logo.jpg" alt="Logo Klinik" class="navbar-logo me-2"> 
+                Klinik Bersama Kelompok 2
+            </a>
+            <div class="ms-auto">
+                <a href="login.html" class="btn btn-outline-light btn-sm px-3 fw-bold rounded-pill">
+                    <i class="fa-solid fa-user me-1"></i> <i class="fa-solid fa-right-to-bracket me-1"></i> Login
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-overlay"></div>
+        
+        <div class="container hero-content">
+            <div class="row align-items-center justify-content-between g-4">
+                
+                <div class="col-lg-7">
+                    <div class="d-flex align-items-center mb-2">
+                        <img src="logo.jpg" alt="Logo Klinik Besar" class="hero-brand-logo me-3">
+                        <h1 class="display-5 brand-title mb-0">KLINIK BERSAMA</h1>
+                    </div>
+                    <p class="text-muted fw-semibold mb-4 fs-5">Melayani dengan hati, sehat bersama kami</p>
+                    
+                    <div class="mb-4">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                            Pelayanan Berkualitas
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon" style="background-color: #17a2b8;"><i class="fa-solid fa-user-md"></i></div>
+                            Dokter Profesional
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon" style="background-color: #007bff;"><i class="fa-solid fa-circle-check"></i></div>
+                            Fasilitas Lengkap
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mt-4">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="poli-badge-wrapper">
+                                <img src="poli-umum.png" alt="Poli Umum" class="poli-img-badge">
+                                <p class="poli-desc">Pemeriksaan kesehatan reguler dan konsultasi medis awal oleh dokter berpengalaman.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="poli-badge-wrapper">
+                                <img src="poli-gigi.png" alt="Poli Gigi" class="poli-img-badge">
+                                <p class="poli-desc">Perawatan kesehatan gigi, penambalan, pencabutan, dan scaling berkala.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="poli-badge-wrapper">
+                                <img src="poli-anak.png" alt="Poli Anak" class="poli-img-badge">
+                                <p class="poli-desc">Pelayanan imunisasi, tumbuh kembang anak, dan penanganan penyakit pada anak.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 ms-auto">
+                    <div class="right-menu-box">
+                        <a href="#" class="menu-item-btn">
+                            <i class="fa-solid fa-notes-medical"></i>
+                            <span class="fw-bold">Pendaftaran</span>
+                        </a>
+                        <a href="#layanan" class="menu-item-btn">
+                            <i class="fa-solid fa-stethoscope"></i>
+                            <span class="fw-bold">Poliklinik</span>
+                        </a>
+                        <a href="#" class="menu-item-btn">
+                            <i class="fa-solid fa-xray"></i>
+                            <span class="fw-bold">Radiologi</span>
+                        </a>
+                        <a href="#" class="menu-item-btn">
+                            <i class="fa-solid fa-flask-vial"></i>
+                            <span class="fw-bold">Laboratorium</span>
+                        </a>
+                        <a href="#" class="menu-item-btn">
+                            <i class="fa-solid fa-capsules"></i>
+                            <span class="fw-bold">Farmasi</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="container mb-5">
+        <div class="info-bar">
+            <div class="row g-3 text-center text-md-start justify-content-center">
+                <div class="col-md-3 col-sm-6 d-flex justify-content-center justify-content-md-start">
+                    <div class="info-bar-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <span class="d-block fw-bold small">Alamat</span>
+                            <span class="text-muted small">Jl. Sehat No. 123 Jakarta Selatan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 d-flex justify-content-center justify-content-md-start">
+                    <div class="info-bar-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <span class="d-block fw-bold small">Telepon</span>
+                            <span class="text-muted small">(021) 1234 5678</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 d-flex justify-content-center justify-content-md-start">
+                    <div class="info-bar-item">
+                        <i class="fa-solid fa-globe"></i>
+                        <div>
+                            <span class="d-block fw-bold small">Website</span>
+                            <span class="text-muted small">www.klinikbersama.id</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 d-flex justify-content-center justify-content-md-start">
+                    <div class="info-bar-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <span class="d-block fw-bold small">Jam Operasional</span>
+                            <span class="text-muted small">Senin - Sabtu: 08.00 - 20.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-2">&copy; Klinik Bersama Kelompok 2 | Project Pemrograman Web 2A1</p>
+        <div>
+            <a href="#" class="text-white me-3 text-decoration-none"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white me-3 text-decoration-none"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white text-decoration-none"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
